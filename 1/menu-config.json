@@ -1,0 +1,157 @@
+{
+  "code": 200,
+  "message": "登录成功",
+  "data": {
+    "token": "eyJhbGciOiJIUzI1NiIs...",
+    "id": 1,
+    "realName": "超级管理员",
+    "avatar": "https://xxx.com/avatar.jpg",
+    "menus": [
+      {
+        "id": 1,
+        "path": "/dashboard",
+        "code": "dashboard",
+        "name": "首页",
+        "icon": "Home"
+      },
+      {
+        "id": 100,
+        "path": "/operation",
+        "code": "operation",
+        "name": "RPA运营管理",
+        "icon": "Setting",
+        "children": [
+          {
+            "id": 101,
+            "path": "/task",
+            "code": "operation:task:dir",
+            "name": "任务管理",
+            "icon": "ToDoList",
+            "children": [
+              {
+                "id": 102,
+                "path": "/task-list",
+                "code": "operation:task:list",
+                "name": "任务列表",
+                "icon": "Appstore"
+              },
+              {
+                "id": 103,
+                "path": "/process-execution",
+                "code": "operation:execution:record",
+                "name": "执行日志总览",
+                "icon": "BarChart"
+              }
+            ]
+          },
+          {
+            "id": 104,
+            "path": "/robot",
+            "code": "operation:robot:dir",
+            "name": "机器人管理",
+            "icon": "Robot",
+            "children": [
+              {
+                "id": 105,
+                "path": "/robot-list",
+                "code": "operation:robot:list",
+                "name": "机器人列表",
+                "icon": "Appstore"
+              }
+            ]
+          },
+          {
+            "id": 106,
+            "path": "/process",
+            "code": "operation:process:dir",
+            "name": "流程管理",
+            "icon": "FileAdd",
+            "children": [
+              {
+                "id": 107,
+                "path": "/process-definition",
+                "code": "operation:process:definition",
+                "name": "流程配置列表",
+                "icon": "Appstore"
+              }
+            ]
+          },
+          {
+            "id": 108,
+            "path": "/data",
+            "code": "operation:data:dir",
+            "name": "数据管理",
+            "icon": "DataBoard",
+            "children": [
+              {
+                "id": 109,
+                "path": "/data-collection",
+                "code": "operation:data:collection",
+                "name": "数据采集流水",
+                "icon": "Download"
+              },
+              {
+                "id": 110,
+                "path": "/data-parsing",
+                "code": "operation:data:parsing",
+                "name": "数据解析流水",
+                "icon": "Document"
+              },
+              {
+                "id": 111,
+                "path": "/data-processing",
+                "code": "operation:data:processing",
+                "name": "数据加工流水",
+                "icon": "LineChart"
+              },
+              {
+                "id": 112,
+                "path": "/data-query",
+                "code": "operation:data:query",
+                "name": "业务数据查询",
+                "icon": "Search"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 200,
+        "path": "/system",
+        "code": "system",
+        "name": "系统管理",
+        "icon": "Setting",
+        "children": [
+          {
+            "id": 201,
+            "path": "/user-profile",
+            "code": "system:user:profile",
+            "name": "个人中心",
+            "icon": "User"
+          },
+          {
+            "id": 202,
+            "path": "/user-management",
+            "code": "system:user:management",
+            "name": "系统用户列表",
+            "icon": "UserGroup"
+          },
+          {
+            "id": 203,
+            "path": "/role-management",
+            "code": "system:role:management",
+            "name": "系统角色列表",
+            "icon": "Team"
+          },
+          {
+            "id": 204,
+            "path": "/resource-management",
+            "code": "system:resource:management",
+            "name": "菜单与权限字典维护",
+            "icon": "Lock"
+          }
+        ]
+      }
+    ]
+  }
+}
